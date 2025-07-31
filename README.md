@@ -1,8 +1,5 @@
 # CloudNest S3 Browser
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7adb46c3-ccf6-471d-8547-8b348b5b35b0" />
-
-![CloudNest File Browser Screenshot](<!-- PASTE YOUR MAIN APP SCREENSHOT CODE HERE -->)
 
 A modern, fast, and secure client-side S3 browser. This tool allows you to connect directly to your own AWS S3 bucket to manage your files and folders through a clean user interface, without your credentials ever touching a server.
 
