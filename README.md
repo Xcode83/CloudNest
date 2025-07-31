@@ -56,7 +56,7 @@ Follow these steps to get the application running on your local machine.
 Now, open your browser and navigate to `http://localhost:5173`.
 ##
 
-### . AWS Setup (Required)
+### AWS Setup (Required)
 
 Before running, you need an S3 bucket with the correct **CORS configuration**.
 
