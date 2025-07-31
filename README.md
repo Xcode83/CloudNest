@@ -1,12 +1,73 @@
-# React + Vite
+# CloudNest S3 Browser
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7adb46c3-ccf6-471d-8547-8b348b5b35b0" />
 
-Currently, two official plugins are available:
+![CloudNest File Browser Screenshot](<!-- PASTE YOUR MAIN APP SCREENSHOT CODE HERE -->)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, fast, and secure client-side S3 browser. This tool allows you to connect directly to your own AWS S3 bucket to manage your files and folders through a clean user interface, without your credentials ever touching a server.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+*   **Secure Client-Side Connection:** Connect directly to AWS. Your credentials are held only in browser memory and are gone when you close the tab.
+*   **File & Folder Management:**
+    *   List files and navigate through folders.
+    *   Upload files with a simple drag-and-drop or file picker.
+    *   Download files directly from your bucket.
+    *   Create new folders.
+    *   Delete files and entire folders.
+*   **Clean UI:** A modern and intuitive interface built with React.
+*   **Breadcrumb Navigation:** Easily keep track of and navigate your folder path.
+
+---
+
+## 🚀 How to Run This Project Locally
+
+To run this project on your own machine, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Xcode83/CloudNest.git
+    ```
+
+2.  **Navigate to the project directory:**
+    ```bash
+    cd CloudNest
+    ```
+
+3.  **Install the dependencies:**
+    ```bash
+    npm install
+    ```
+
+4.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will be running at `http://localhost:5173`.
+
+---
+
+## 💻 Tech Stack
+
+*   **Frontend:** [React](https://reactjs.org/)
+*   **Build Tool:** [Vite](https://vitejs.dev/)
+*   **AWS SDK:** [@aws-sdk/client-s3](https://www.npmjs.com/package/@aws-sdk/client-s3) for S3 interactions.
+*   **Styling:** Plain CSS with a modern, dark theme.
+
+---
+
+## ⚠️ Security Notice
+
+This is a **client-side only** tool.
+*   Your AWS Access Keys are required to communicate with the AWS S3 API directly from your browser.
+*   Your credentials are only stored in the application's memory for the duration of your session.
+*   **They are never transmitted to, or stored on, any server other than AWS.**
+*   Closing your browser tab or disconnecting will permanently erase the credentials from the application's memory.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
